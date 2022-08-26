@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Search the Meal</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="meal-wrapper">
+				<div class="search-meal">
+					<h2 class="title">Search Your Favourite Meal</h2>
+					<blockquote>
+						This Meal App is Made By.<br />
+						<cite>- uttam kamar</cite>
+					</blockquote>
+					<!-- search meal -->
+					<div class="search-meal-box">
+						<input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input" />
+						<button type="submit" class="search-btn btn" id="search-btn">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<!-- All meal result -->
+				<div class="meal-result">
+					<h2 class="title">Your Search Results:</h2>
+					<div id="meal">
+						<!-- meal item -->
+						<!-- <div class="meal-item">
+							<div class="meal-img">
+								<img src="food.jpg" alt="food" />
+							</div>
+							<div class="meal-name">
+								<h3>Potato Chips</h3>
+								<div class="info">
+									<a href="#" class="recipe-btn">View Recipe</a>
+									<span class="icon fa-solid fa-heart"></span>
+								</div>
+							</div>
+						</div> -->
+						<!-- end of meal item -->
+					</div>
+				</div>
+				<!-- popup meal Item -->
+				<div class="meal-details">
+					<!-- recipe close btn -->
+					<button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+						<i class="fas fa-times"></i>
+					</button>
+
+					<!-- meal content -->
+					<div class="meal-details-content">
+						<!-- <h2 class="recipe-title">Meals Name Here</h2>
+						<p class="recipe-category">Category Name</p>
+						<div class="recipe-instruct">
+							<h3>Instructions:</h3>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae
+								distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci
+								in?
+							</p>
+						</div>
+						<div class="recipe-meal-img">
+							<img src="food.jpg" alt="" />
+						</div>
+						<div class="recipe-link">
+							<a href="#" target="_blank">Watch Video</a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!-- favourite meal sidebar -->
+			<div id="myFavourite" class="favourite">
+				<span class="menu" onclick="openNav()">&#9776;</span>
+
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<h3>Favourite Food</h3>
+
+				<div class="fav-wrapper">
+					<div class="fav-card">
+						<!-- <img class="fav-image" src="food.jpg" alt="orderImage" />
+						<p>Details goes here</p>
+						<i class="fas fa-times"></i>-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
